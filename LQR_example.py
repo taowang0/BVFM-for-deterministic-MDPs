@@ -3,8 +3,6 @@ import numpy as np
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras import Input
-from matplotlib import cm
-from matplotlib.ticker import LinearLocator
 import matplotlib.pyplot as plt
 import time
 
