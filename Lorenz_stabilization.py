@@ -50,8 +50,7 @@ def next_state(x, v, dt):
 
 def running_cost(x, v):
     x_cost = tf.matmul(x * x, tf.constant([[1.], [1.], [1.]]))
-    v_cost = tf.matmul(v * v, tf.constant([[0.]]))
-    L = 0.5 * (x_cost + v_cost) * dt
+    L = 0.5 * x_cost * dt
     return L
 
 
